@@ -1,6 +1,8 @@
-define postfix::main (  $ensure = present,
-                        $value = undef,
-                        $configfile = '/etc/postfix/main.cf' ) {
+define postfix::main (
+  $ensure = present,
+  $value = undef,
+  $configfile = '/etc/postfix/main.cf'
+) {
 
   case $ensure {
     present: {
