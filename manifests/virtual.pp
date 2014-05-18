@@ -68,6 +68,6 @@ define postfix::virtual (
     require => [
       Package['postfix'],
       ],
-    notify  => Postfix::Hash['/etc/postfix/virtual'],
+    notify  => Postfix::Hash[$file],
   }
 }
